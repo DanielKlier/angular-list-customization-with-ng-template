@@ -1,0 +1,41 @@
+<h1>Something that's easy in React but Angular can't do</h1>
+
+<h2>The Idea</h2>
+<p>List of something</p>
+<ul class="problem-graphics">
+  <li class="block l0">
+    <p>Wrapper element (should be flexible)</p>
+    <div class="block l1">
+      <p>Actual item</p>
+      <div class="block l2">
+        <p>Content 1</p>
+      </div>
+    </div>
+  </li>
+  <li class="block l0">
+    <p>Wrapper element (should be flexible)</p>
+    <div class="block l1">
+      <p>Actual item</p>
+      <div class="block l2">
+        <p>Content 1</p>
+      </div>
+    </div>
+  </li>
+  <li class="block l0">
+    <p>Wrapper element (should be flexible)</p>
+    <div class="block l1">
+      <p>Actual item</p>
+      <div class="block l2">
+        <p>Content 1</p>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h2>Does it work?</h2>
+
+<app-list [items]="[1, 2, 3, 4, 5]" [wrapper]="wrapper"></app-list>
+
+<ng-template #wrapper let-content>
+  <app-wrapper [content]="content"></app-wrapper>
+</ng-template>

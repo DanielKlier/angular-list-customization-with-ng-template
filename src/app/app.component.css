@@ -1,0 +1,29 @@
+.problem-graphics {
+  background-color: cornflowerblue;
+  border: 1px solid lightblue;
+  padding: 1em;
+  list-style: circle;
+}
+
+.block {
+  display: block;
+  border: 1px solid lightgray;
+  padding: 1em;
+}
+
+.block.l0 {
+  background-color: aliceblue;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.block.l1 {
+  background-color: bisque;
+  padding-left: 1em;
+}
+
+.block.l2 {
+  background-color: greenyellow;
+
+  padding-left: 1em;
+}
